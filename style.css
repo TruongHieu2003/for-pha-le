@@ -222,3 +222,14 @@ body {
     from { transform: translateX(100%); }
     to { transform: translateX(-30%); }
 }
+
+
+
+.chapters button {
+    transition: 0.4s ease;
+}
+
+.chapters button.active {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px rgba(0,200,255,0.4);
+}
