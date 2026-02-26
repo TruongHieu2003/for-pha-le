@@ -134,8 +134,57 @@ vẫn chọn anh.
 
     if (number === 4) {
         text.innerHTML = `
-        <!-- DÁN NỘI DUNG CHAPTER 4 Ở ĐÂY -->
-        <p>Viết nội dung chương 4 ở đây...</p>
+<p>
+Như tiêu đề thôi,  
+anh yêu em nhiều hơn cách anh thể hiện.
+</p>
+
+<p>
+Mong muốn của anh là  
+2 đứa hiểu nhau hơn  
+và lắng nghe nhau nhiều hơn.
+</p>
+
+<p>
+Anh sẽ chỉ yêu mỗi em thôi.  
+Anh muốn bảo vệ em,  
+và hướng dẫn, hỗ trợ em những gì anh có thể.
+</p>
+
+<p>
+Anh không phải người hoàn hảo gì hết.  
+Cuộc sống anh tệ ra sao thì em biết rồi.
+</p>
+
+<p>
+Nhưng anh muốn  
+anh là người đàn ông tuyệt vời của em.  
+Là người có thể được em tự hào khoe với mọi người.
+</p>
+
+<p>
+Anh cám ơn em.  
+Khó khăn nào em cũng bên cạnh anh hết.
+</p>
+
+<p>
+Viết ra như vầy  
+cũng không thể diễn tả hết cảm xúc của anh.
+</p>
+
+<p>
+Anh luôn luôn muốn yêu em.
+</p>
+
+<p>
+Viết vầy chắc em cũng làm biếng đọc rồi đúng hong…
+</p>
+
+<p class="highlight">
+Anh sẽ chứng minh cho em thấy nha.  
+<br><br>
+ANH YÊU EM.
+</p>
         `;
     }
 
@@ -145,6 +194,7 @@ vẫn chọn anh.
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+
 
 
 
