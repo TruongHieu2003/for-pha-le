@@ -124,4 +124,24 @@ body {
     to { opacity: 1; transform: scale(1); }
 }
 
+.chapters {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chapters button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    opacity: 0.9;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.chapters button:active {
+    opacity: 0.6;
+}
 
