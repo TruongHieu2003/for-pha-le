@@ -153,8 +153,15 @@ intro.classList.add("active");
 }
 
 function closePopup() {
-    document.getElementById("popup").style.display = "none";
+    const popup = document.getElementById("popup");
+    const intro = document.getElementById("photoIntro");
+
+    popup.style.display = "none";
+
+    // Reset intro hoàn toàn
+    intro.classList.remove("active");
 }
+
 
 
 
