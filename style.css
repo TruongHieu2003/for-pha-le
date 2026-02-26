@@ -58,16 +58,21 @@ body {
 }
 
 .gallery {
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery img {
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
+    width: 28%;
     aspect-ratio: 4/5;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:nth-child(2) {
+    transform: scale(1.1);
 }
