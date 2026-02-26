@@ -92,8 +92,43 @@ thì em đọc cái tiếp theo nha.
 
     if (number === 3) {
         text.innerHTML = `
-        <!-- DÁN NỘI DUNG CHAPTER 3 Ở ĐÂY -->
-        <p>Viết nội dung chương 3 ở đây...</p>
+<p>
+Anh nhận ra là anh muốn gì.
+</p>
+
+<p>
+Anh sẽ thay đổi từng cái  
+để hợp với em hơn.  
+Anh sẽ tiếp thu  
+và dịu dàng với em nhất.
+</p>
+
+<p>
+Anh sẽ suy nghĩ cho cảm xúc của em nhiều hơn.
+</p>
+
+<p>
+Anh xin lỗi  
+vì đã làm em nghĩ  
+anh không tôn trọng cảm xúc của em.
+</p>
+
+<p>
+Nhưng chắc chắn là em biết,  
+anh không bao giờ hết yêu em.
+</p>
+
+<p>
+Anh luôn muốn yêu em.
+</p>
+
+<p class="highlight">
+Anh cám ơn em  
+vì vẫn cho anh cơ hội,  
+vẫn chọn anh.
+</p>
+
+
         `;
     }
 
@@ -110,5 +145,6 @@ thì em đọc cái tiếp theo nha.
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+
 
 
