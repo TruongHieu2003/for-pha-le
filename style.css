@@ -184,3 +184,41 @@ body {
     margin-top: 25px;
 }
 
+
+
+/* PHOTO INTRO OVERLAY */
+.photo-intro {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.photo-intro.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Track trượt ngang */
+.photo-track {
+    display: flex;
+    gap: 30px;
+    animation: slidePhotos 3.5s ease forwards;
+}
+
+.photo-track img {
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+@keyframes slidePhotos {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-30%); }
+}
