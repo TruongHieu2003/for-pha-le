@@ -9,7 +9,7 @@ function openChapter(number) {
     if (number === 1) {
         text.innerHTML = `
 
-        <h2 class="chapter-title">Chương 1 — Vì Anh Thích Em</h2>
+        <h2 class="chapter-title">Vì Anh Thích Em</h2>
 
 <p>
 Thật ra… cũng không vì lý do gì hết.  
@@ -50,8 +50,43 @@ ANH YÊU EM.
 
     if (number === 2) {
         text.innerHTML = `
-        <!-- DÁN NỘI DUNG CHAPTER 2 Ở ĐÂY -->
-        <p>Viết nội dung chương 2 ở đây...</p>
+
+<p>
+Vì anh dại dột thôi.  
+Anh cứ giữ cái suy nghĩ là 2 đứa không hợp.
+</p>
+
+<p>
+Nhiều chuyện nhỏ lẻ mà 2 bên giải quyết chưa xong  
+nên nó thành ra vậy.
+</p>
+
+<p>
+Anh cũng sợ…  
+Sau này nếu mình được về chung nhà  
+mà còn gặp những chuyện như vậy nữa  
+thì rất khó.
+</p>
+
+<p>
+Đôi lúc anh thấy em trẻ con lắm.  
+Tự nhiên đưa cho anh ví dụ,  
+rồi tự nhiên giận anh.
+</p>
+
+<p>
+Anh là dạng người không có overthinking.  
+Anh luôn tin tưởng em,  
+nên anh thường không có suy nghĩ gì nhiều  
+về chuyện người thứ 3 sẽ xuất hiện.
+</p>
+
+<p class="highlight">
+Và tại sao anh lại bỏ đi cái suy nghĩ không hợp này…  
+thì em đọc cái tiếp theo nha.
+</p>
+
+
         `;
     }
 
@@ -75,4 +110,5 @@ ANH YÊU EM.
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+
 
