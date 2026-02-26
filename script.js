@@ -132,7 +132,7 @@ function openChapter(number) {
     }
 
     // Bật photo intro
-   // Reset animation
+// Bật photo intro (reset đúng cách)
 intro.classList.remove("active");
 intro.classList.add("active");
 
@@ -160,6 +160,7 @@ function closePopup() {
     // Reset intro hoàn toàn
     intro.classList.remove("active");
 }
+
 
 
 
