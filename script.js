@@ -3,7 +3,7 @@ function showLove() {
 }
 
 function openChapter(number) {
-
+    document.body.style.overflow = "hidden";
     const popup = document.getElementById("popup");
     const text = document.getElementById("popup-text");
     const intro = document.getElementById("photoIntro");
@@ -155,12 +155,13 @@ intro.classList.add("active");
 function closePopup() {
     const popup = document.getElementById("popup");
     const intro = document.getElementById("photoIntro");
-
+    document.body.style.overflow = "auto";
     popup.style.display = "none";
 
     // Reset intro hoàn toàn
     intro.classList.remove("active");
 }
+
 
 
 
