@@ -1,61 +1,73 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins', sans-serif;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #021B3A, #0A3D62);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
 }
 
-body{
-  background:#0a1f44;
-  color:white;
-  text-align:center;
+.container {
+    padding: 30px 20px 60px 20px;
 }
 
-.hero{
-  height:100vh;
-  background:linear-gradient(180deg,#001f4d,#003c8f,#00bfff);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:20px;
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    opacity: 0.8;
 }
 
-.content h1{
-  font-size:42px;
-  color:#87CEFA;
-  text-shadow:0 0 20px #00bfff;
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(0,200,255,0.7);
 }
 
-.content h2{
-  font-weight:300;
+.quote {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 25px;
 }
 
-.content p{
-  margin:20px 0;
+.heart-btn {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-button{
-  background:#00bfff;
-  border:none;
-  padding:12px 25px;
-  border-radius:30px;
-  font-size:16px;
-  color:white;
-  cursor:pointer;
+.heart-btn:hover {
+    background: rgba(0,200,255,0.3);
 }
 
-button:hover{
-  background:#009acd;
+.chapters {
+    margin-top: 35px;
+    font-size: 14px;
+    opacity: 0.85;
 }
 
-.story{
-  padding:60px 20px;
-  line-height:2;
-  font-size:18px;
+.chapters p {
+    margin: 8px 0;
 }
 
-.secret{
-  display:none;
-  padding:60px 20px;
-  background:#001f3f;
+.gallery {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    aspect-ratio: 4/5;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
