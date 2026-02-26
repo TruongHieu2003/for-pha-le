@@ -90,7 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    z-index: 999;
+    z-index: 9999;   /* thêm dòng này */
 }
 
 /* Nội dung popup */
@@ -144,4 +144,5 @@ body {
 .chapters button:active {
     opacity: 0.6;
 }
+
 
