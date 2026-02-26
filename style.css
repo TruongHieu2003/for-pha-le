@@ -208,6 +208,10 @@ body {
 .photo-track {
     display: flex;
     gap: 30px;
+}
+
+/* Animation chỉ chạy khi intro active */
+.photo-intro.active .photo-track {
     animation: slidePhotos 3.5s ease forwards;
 }
 
@@ -260,3 +264,4 @@ body {
 .close-btn:hover {
     background: rgba(255,255,255,0.3);
 }
+
