@@ -83,33 +83,31 @@ body {
 }
 
 /* Popup nền tối */
+/* Lớp nền mờ */
 .popup {
-    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,30,0.8);
-    backdrop-filter: blur(8px);
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: none;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
     padding: 20px;
-    z-index: 9999;   /* thêm dòng này */
 }
 
-/* Nội dung popup */
+/* Khung nội dung */
 .popup-content {
     background: linear-gradient(to bottom, #0A3D62, #021B3A);
-    padding: 25px 20px;
-    border-radius: 20px;
     width: 100%;
-    max-width: 380px;
-    box-sizing: border-box; /* QUAN TRỌNG */
-    color: white;
+    max-width: 420px;
+    max-height: 85vh; /* QUAN TRỌNG */
+    overflow-y: auto; /* Cho phép scroll nếu dài */
+    padding: 30px 20px;
+    border-radius: 20px;
     position: relative;
-    animation: fadeIn 0.4s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
 }
 
 .popup-content p {
@@ -233,3 +231,4 @@ body {
     transform: scale(1.08);
     box-shadow: 0 0 40px rgba(0,200,255,0.4);
 }
+
