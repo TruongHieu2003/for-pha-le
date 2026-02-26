@@ -76,3 +76,52 @@ body {
 .gallery img:nth-child(2) {
     transform: scale(1.1);
 }
+
+/* Popup nền tối */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,30,0.8);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+/* Nội dung popup */
+.popup-content {
+    background: linear-gradient(to bottom, #0A3D62, #021B3A);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    color: white;
+    position: relative;
+    animation: fadeIn 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.popup-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
