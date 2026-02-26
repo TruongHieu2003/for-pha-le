@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -96,10 +101,11 @@ body {
 /* Nội dung popup */
 .popup-content {
     background: linear-gradient(to bottom, #0A3D62, #021B3A);
-    padding: 25px;
+    padding: 25px 20px;
     border-radius: 20px;
-    max-width: 400px;
     width: 100%;
+    max-width: 380px;
+    box-sizing: border-box; /* QUAN TRỌNG */
     color: white;
     position: relative;
     animation: fadeIn 0.4s ease;
@@ -113,10 +119,11 @@ body {
 
 .close {
     position: absolute;
-    right: 15px;
+    right: 12px;
     top: 10px;
-    font-size: 22px;
+    font-size: 24px;
     cursor: pointer;
+    z-index: 10;
 }
 
 @keyframes fadeIn {
@@ -132,17 +139,26 @@ body {
 }
 
 .chapters button {
-    background: transparent;
-    border: none;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
     color: white;
-    font-size: 15px;
-    opacity: 0.9;
+    font-size: 14px;
+    padding: 14px;
+    text-align: left;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
     cursor: pointer;
-    padding: 10px;
+}
+
+.chapters button:hover {
+    background: rgba(0,200,255,0.2);
+    transform: translateY(-2px);
 }
 
 .chapters button:active {
-    opacity: 0.6;
+    transform: scale(0.98);
 }
+
 
 
