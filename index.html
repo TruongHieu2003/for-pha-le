@@ -21,10 +21,10 @@ Anh làm cái này ra là để giải bày cũng coi như là tâm sự với e
     <button class="heart-btn" onclick="showLove()">💎 Chạm vào đây</button>
 
 <div class="chapters">
-    <p>Ban đầu anh thích em vì cái gì</p>
-    <p>Lý do tại sao anh nói mình không hợp nè...</p>
-    <p>Và lý do tại sao anh lại hối hận và muốn tiếp tục bên em</p>
-    <p>Thật ra anh yêu em nhiều lắm</p>
+    <p onclick="openChapter(1)">Ban đầu anh thích em vì cái gì</p>
+    <p onclick="openChapter(2)">Lý do tại sao anh nói mình không hợp nè...</p>
+    <p onclick="openChapter(3)">Và lý do tại sao anh lại hối hận và muốn tiếp tục bên em</p>
+    <p onclick="openChapter(4)">Thật ra anh yêu em nhiều lắm</p>
 </div>
 
 <div class="gallery">
@@ -36,7 +36,20 @@ Anh làm cái này ra là để giải bày cũng coi như là tâm sự với e
 </div>
 
 <script src="script.js"></script>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">×</span>
+        <div id="popup-text">
+            <!-- ANH VIẾT NỘI DUNG Ở ĐÂY -->
+        </div>
+    </div>
+</div>
+
+    
 </body>
 </html>
+
 
 
