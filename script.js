@@ -134,7 +134,6 @@ function openChapter(number) {
     // Bật photo intro
    // Reset animation
 intro.classList.remove("active");
-void intro.offsetWidth; // ép reflow để reset animation
 intro.classList.add("active");
 
     // Sau 3.2s mới hiện nội dung
@@ -161,6 +160,7 @@ function closePopup() {
     // Reset intro hoàn toàn
     intro.classList.remove("active");
 }
+
 
 
 
