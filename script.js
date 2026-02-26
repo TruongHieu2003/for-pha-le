@@ -132,7 +132,10 @@ function openChapter(number) {
     }
 
     // Bật photo intro
-    intro.classList.add("active");
+   // Reset animation
+intro.classList.remove("active");
+void intro.offsetWidth; // ép reflow để reset animation
+intro.classList.add("active");
 
     // Sau 3.2s mới hiện nội dung
     setTimeout(() => {
@@ -152,6 +155,7 @@ function openChapter(number) {
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+
 
 
 
